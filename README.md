@@ -1,4 +1,6 @@
-# <img src="./img/icon.png" width="40"> Luminescence: LifeBand Website (nwHacks 2017)
+# <img src="./img/icon.png" width="40"> LifeBand (nwHacks 2017): Website
+
+## By Luminescence
 
 A distributed and scalable software system designed chiefly to alleviate patient misidentification in hospitals and senior centers.
 

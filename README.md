@@ -4,7 +4,7 @@
 
 <center>
 	<a href="https://github.com/nwhacks2017">
-	  <img src="img/github.png" alt="GitHub logo" title="View the source code on GitHub" style="width:8em">
+		  <img src="img/github.png" alt="GitHub logo" title="View the source code on GitHub" style="width:8em">
 	</a>
 </center>
 
@@ -35,7 +35,9 @@ We placed among the top 5 projects in the hackathon and were invited to present 
 * Co-founder of [Optigo Networks](https://www.optigo.net/) and board member of [Coast Mental Health](https://www.coastmentalhealth.com/) **Byron Thom**, and
 * Product Lead of [1QBit](https://1qbit.com/) **David Byrd**.
 
-![Picture of team presenting](img/team-presenting-finalists.jpg)
+<a href="https://twitter.com/nwplusubc/status/843608609049079808">
+	<img src="img/team-presenting-finalists.jpg" alt="Picture of team presenting">
+</a>
 
 ## Lightning Talk Presentation
 

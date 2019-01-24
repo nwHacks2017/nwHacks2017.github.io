@@ -30,6 +30,8 @@ This system is quick to respond and gathers information in real time. It is easy
 
 Users interact with the tags by opening an Android application and scanning the tag with their NFC-enabled device. The application will contact a [Golang](https://golang.org/) server which will query a [CockroachDB](https://github.com/cockroachdb/cockroach) relational database, both of which are hosted on [Amazon Web Services](https://aws.amazon.com/). The patient data returned will be displayed on the device.
 
+<img src="img/architecture.png" alt="Architecture">
+
 ## Results
 
 We placed among the top 5 projects in the hackathon and were invited to present in front of all participants as well as the final judges. The judges consisted of:

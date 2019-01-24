@@ -24,6 +24,10 @@ Our solution was to create an inexpensive solution which could be scaled to the 
 
 Inexpensive and small identification tags which emit [NFC](http://electronics.howstuffworks.com/nfc-tag.htm) are attached to hospital beds, or placed on wristbands and given to residents of senior centers. These are registered with the records of the person they are given to.
 
+This system is quick to respond and gathers information in real time. It is easy to use for those in the healthcare industry, and it is cheap to implement with minimal hardware components.
+
+### Technologies
+
 Users interact with the tags by opening an Android application and scanning the tag with their NFC-enabled device. The application will contact a [Golang](https://golang.org/) server which will query a [CockroachDB](https://github.com/cockroachdb/cockroach) relational database, both of which are hosted on [Amazon Web Services](https://aws.amazon.com/). The patient data returned will be displayed on the device.
 
 ## Results

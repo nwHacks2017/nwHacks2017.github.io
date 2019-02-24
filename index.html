@@ -1,0 +1,88 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LifeBand</title>
+  </head>
+  <body>
+
+    <p>
+      <strong>LifeBand</strong> is a wristband system designed to alleviate patient misidentification in hospitals and senior centers by managing patient medical record access. The project was created during March 18-19, 2017 for <a href="https://www.nwhacks.io/" target="_blank">nwHacks 2017</a>, an annual hackathon hosted by StartupStorm from the University of British Columbia.
+    </p>
+
+    <a href="https://github.com/nwhacks2017">
+      <img src="res/img/github.png" alt="GitHub logo" title="View the source code on GitHub">
+  	</a>
+
+    <p>
+      <i>We placed among the <strong>top 5 projects.</strong></i>
+    </p>
+
+    <img src="res/img/team-presenting.jpg" alt="Team picture">
+
+    <h1>The Inspiration and Problem</h1>
+
+    <p>
+      According to a study by the esteemed Johns Hopkins University, the third leading cause of death in the US is <a href="https://www.washingtonpost.com/news/to-your-health/wp/2016/05/03/researchers-medical-errors-now-third-leading-cause-of-death-in-united-states/" target="_blank">patient misidentification</a>. Over a quarter of a million people die annually due to preventable medical errors - that's 700 deaths a day, or 1 death every two minutes. We set out to envision a technological solution for this problem by better tying patients to their medical records.
+    </p>
+
+    <h1>Solution</h1>
+
+    <p>
+      Our solution was to create an inexpensive solution which could be scaled to the needs of an entire country's medical records and would allow for maximum availability even when under immense usage. The software system would also allow for complex data analytics to be performed, resulting in a significant increase in medical statistics.
+    </p>
+
+    <h2>The System and Technologies</h2>
+
+    <p>
+      Inexpensive and small identification tags which emit <a href="http://electronics.howstuffworks.com/nfc-tag.htm" target="_blank">NFC</a> are attached to hospital beds, or placed on wristbands and given to residents of senior centers. These are registered with the records of the person they are given to.
+    </p>
+
+    <p>
+      This system is quick to respond and gathers information in real time. It is easy to use for those in the healthcare industry, and it is cheap to implement with minimal hardware components.
+    </p>
+
+    <h2>Technologies</h2>
+
+    <p>
+      Users interact with the tags by opening an Android application and scanning the tag with their NFC-enabled device. The application will contact a <a href="https://golang.org/" target="_blank">Golang</a> server which will query a <a href="https://github.com/cockroachdb/cockroach" target="_blank">CockroachDB</a> relational database, both of which are hosted on <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a>. The patient data returned will be displayed on the device.
+    </p>
+
+    <img src="res/img/architecture.png" alt="Architecture diagram">
+
+    <h1>Results</h1>
+
+    <p>
+      We placed among the top 5 projects in the hackathon and were invited to present in front of all participants as well as the final judges. The judges consisted of:
+      <ul>
+        <li> <a href="https://en.wikipedia.org/wiki/Santa_J._Ono" target="_blank">UBC President <strong>Santa Ono</strong></a>,</li>
+        <li>Previous CEO of <a href="https://pathful.aerobaticapp.com/" target="_blank">Pathful</a> and current CEO of <a href="https://www.proxxi.co/" target="_blank">Proxxi</a> (acquired by Mobify) <strong>Campbell Macdonald</strong>,</li>
+        <li>Co-founder of <a href="https://www.optigo.net/" target="_blank">Optigo Networks</a> and board member of <a href="https://www.coastmentalhealth.com/" target="_blank">Coast Mental Health</a> <strong>Byron Thom</strong>, and</li>
+        <li>Product Lead of <a href="https://1qbit.com/" target="_blank">1QBit</a> <strong>David Byrd</strong>.</li>
+      </ul>
+    </p>
+
+    <a href="https://twitter.com/nwplusubc/status/843608609049079808">
+    	<img src="res/img/team-presenting-finalists.jpg" alt="Final presentation by the team">
+    </a>
+
+    <h1>Lightning Talk Presentation</h1>
+
+    <a href="https://www.youtube.com/watch?v=gbXAl5zKDpA/" target="_blank">
+      <img src="http://img.youtube.com/vi/gbXAl5zKDpA/maxresdefault.jpg" alt="YouTube preview image">
+    </a>
+
+    <h1>About</h1>
+
+    <p>
+      The creators of this project are <a href="https://github.com/KieranMcCormick" target="_blank">Kieran McCormick</a>, <a href="https://github.com/eul721" target="_blank">Jacky Chao</a>, <a href="https://github.com/carlsonchan" target="_blank">Carlson Chan</a>, <a href="https://github.com/jleung51" target="_blank">Jeffrey Leung</a>, and <a href="https://github.com/Brad1321" target="_blank">Bradley Dalrymple</a>.
+    </p>
+
+    <img src="res/img/team-working.jpg" alt="Team picture">
+
+    <p>
+      <i>Disclaimer: This page was created after the hackathon's completion.</i>
+    </p>
+
+  </body>
+</html>

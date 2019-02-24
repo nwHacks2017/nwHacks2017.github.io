@@ -1,38 +1,47 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>LifeBand</title>
-  </head>
-  <body>
+    <meta property="og:title" content="LifeBand">
+    <meta property="og:url" content="https://nwhacks2017.github.io/">
+    <meta property="og:description" content="App to improve patient identification with through easier record access.">
+    <meta property="og:image" content="res/img/team-presenting.jpg">
 
-    <p>
+    <title>LifeBand</title>
+
+    <link rel="stylesheet" href="lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/css/styles.css">
+  </head>
+
+  <body><div id="about-content">
+
+    <p class="mt-5">
       <strong>LifeBand</strong> is a wristband system designed to alleviate patient misidentification in hospitals and senior centers by managing patient medical record access. The project was created during March 18-19, 2017 for <a href="https://www.nwhacks.io/" target="_blank">nwHacks 2017</a>, an annual hackathon hosted by StartupStorm from the University of British Columbia.
     </p>
 
     <a href="https://github.com/nwhacks2017">
-      <img src="res/img/github.png" alt="GitHub logo" title="View the source code on GitHub">
+      <img class="img-fluid d-block mx-auto company-logo my-5" src="res/img/github.png" alt="GitHub logo" title="View the source code on GitHub">
   	</a>
 
     <p>
       <i>We placed among the <strong>top 5 projects.</strong></i>
     </p>
 
-    <img src="res/img/team-presenting.jpg" alt="Team picture">
+    <img class="img-fluid d-block mx-auto" src="res/img/team-presenting.jpg" alt="Team picture">
 
-    <h1>The Inspiration and Problem</h1>
+    <h1 class="mt-4">The Inspiration and Problem</h1>
 
     <p>
       According to a study by the esteemed Johns Hopkins University, the third leading cause of death in the US is <a href="https://www.washingtonpost.com/news/to-your-health/wp/2016/05/03/researchers-medical-errors-now-third-leading-cause-of-death-in-united-states/" target="_blank">patient misidentification</a>. Over a quarter of a million people die annually due to preventable medical errors - that's 700 deaths a day, or 1 death every two minutes. We set out to envision a technological solution for this problem by better tying patients to their medical records.
     </p>
 
-    <h1>Solution</h1>
+    <h1 class="mt-4">Solution</h1>
 
     <p>
       Our solution was to create an inexpensive solution which could be scaled to the needs of an entire country's medical records and would allow for maximum availability even when under immense usage. The software system would also allow for complex data analytics to be performed, resulting in a significant increase in medical statistics.
     </p>
 
-    <h2>The System and Technologies</h2>
+    <h2 class="mt-4">The System and Technologies</h2>
 
     <p>
       Inexpensive and small identification tags which emit <a href="http://electronics.howstuffworks.com/nfc-tag.htm" target="_blank">NFC</a> are attached to hospital beds, or placed on wristbands and given to residents of senior centers. These are registered with the records of the person they are given to.
@@ -42,15 +51,15 @@
       This system is quick to respond and gathers information in real time. It is easy to use for those in the healthcare industry, and it is cheap to implement with minimal hardware components.
     </p>
 
-    <h2>Technologies</h2>
+    <h2 class="mt-4">Technologies</h2>
 
     <p>
       Users interact with the tags by opening an Android application and scanning the tag with their NFC-enabled device. The application will contact a <a href="https://golang.org/" target="_blank">Golang</a> server which will query a <a href="https://github.com/cockroachdb/cockroach" target="_blank">CockroachDB</a> relational database, both of which are hosted on <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a>. The patient data returned will be displayed on the device.
     </p>
 
-    <img src="res/img/architecture.png" alt="Architecture diagram">
+    <img class="img-fluid d-block mx-auto" src="res/img/architecture.png" alt="Architecture diagram">
 
-    <h1>Results</h1>
+    <h1 class="mt-4">Results</h1>
 
     <p>
       We placed among the top 5 projects in the hackathon and were invited to present in front of all participants as well as the final judges. The judges consisted of:
@@ -63,26 +72,32 @@
     </p>
 
     <a href="https://twitter.com/nwplusubc/status/843608609049079808">
-    	<img src="res/img/team-presenting-finalists.jpg" alt="Final presentation by the team">
+    	<img class="img-fluid d-block mx-auto" src="res/img/team-presenting-finalists.jpg" alt="Final presentation by the team">
     </a>
 
-    <h1>Lightning Talk Presentation</h1>
+    <h1 class="mt-4">Lightning Talk Presentation</h1>
 
     <a href="https://www.youtube.com/watch?v=gbXAl5zKDpA/" target="_blank">
-      <img src="http://img.youtube.com/vi/gbXAl5zKDpA/maxresdefault.jpg" alt="YouTube preview image">
+      <img class="img-fluid d-block mx-auto" src="http://img.youtube.com/vi/gbXAl5zKDpA/maxresdefault.jpg" alt="YouTube preview image">
     </a>
 
-    <h1>About</h1>
+    <h1 class="mt-4">About</h1>
 
     <p>
       The creators of this project are <a href="https://github.com/KieranMcCormick" target="_blank">Kieran McCormick</a>, <a href="https://github.com/eul721" target="_blank">Jacky Chao</a>, <a href="https://github.com/carlsonchan" target="_blank">Carlson Chan</a>, <a href="https://github.com/jleung51" target="_blank">Jeffrey Leung</a>, and <a href="https://github.com/Brad1321" target="_blank">Bradley Dalrymple</a>.
     </p>
 
-    <img src="res/img/team-working.jpg" alt="Team picture">
+    <img class="img-fluid d-block mx-auto my-4" src="res/img/team-working.jpg" alt="Team picture">
+
+    <hr>
 
     <p>
       <i>Disclaimer: This page was created after the hackathon's completion.</i>
     </p>
 
-  </body>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+  </div></body>
 </html>

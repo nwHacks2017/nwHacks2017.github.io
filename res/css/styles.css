@@ -1,0 +1,13 @@
+a, strong {
+  color: #4d92ce;
+}
+
+#about-content {
+  margin: auto;
+  max-width: 40em;
+}
+
+.company-logo {
+  width: 12em;
+  height: auto;
+}

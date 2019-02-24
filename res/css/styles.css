@@ -2,6 +2,14 @@ a, strong {
   color: #4d92ce;
 }
 
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#banner {
+  background-size: cover;
+}
+
 #about-content {
   margin: auto;
   max-width: 40em;

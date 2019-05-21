@@ -64,10 +64,10 @@
       <source src="res/vid/mockup.mp4" type="video/mp4">
     </video>
 
-    <h2 class="my-4">The System and Technologies</h2>
+    <h2 class="my-4">The System</h2>
 
     <p>
-      Inexpensive and small identification tags which emit <a href="http://electronics.howstuffworks.com/nfc-tag.htm" target="_blank">NFC</a> are attached to hospital beds, or placed on wristbands and given to residents of senior centers. These are registered with the records of the person they are given to.
+      Inexpensive and small identification tags which emit <a href="http://electronics.howstuffworks.com/nfc-tag.htm" target="_blank">NFC</a> are attached to hospital beds, or placed on wristbands and given to residents of senior centers. These are registered with the records of the person they are given to. Users interact with the tags by opening an Android application and scanning the tag with their NFC-enabled device.
     </p>
 
     <p>
@@ -77,10 +77,50 @@
     <h2 class="my-4">Technologies</h2>
 
     <p>
-      Users interact with the tags by opening an Android application and scanning the tag with their NFC-enabled device. The application will contact a <a href="https://golang.org/" target="_blank">Golang</a> server which will query a <a href="https://github.com/cockroachdb/cockroach" target="_blank">CockroachDB</a> relational database, both of which are hosted on <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a>. The patient data returned will be displayed on the device.
+      The application will contact a <a href="https://golang.org/" target="_blank">Golang</a> server which will query a <a href="https://github.com/cockroachdb/cockroach" target="_blank">CockroachDB</a> relational database, both of which are hosted on <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a>. The patient data returned will be displayed on the device.
     </p>
 
     <img class="img-fluid d-block mx-auto" src="res/img/architecture.png" alt="Architecture diagram">
+
+    <img class="img-fluid d-block mx-auto" src="res/img/flow.png" alt="Flow diagram">
+
+    <h3 class="my-4">Near-Field Communication (NFC)</h3>
+
+    <img class="img-fluid d-block mx-auto company-logo my-4" src="res/img/logos/nfc-tag.jpg" alt="NFC tag">
+
+    <p>
+      Each patient bracelet contains a light and cheap NFC tag. When the user taps the phone against the bracelet, the tag emits a small piece of data which identifies the patient uniquely, but does not include any confidential patient data itself.
+    </p>
+    <p>
+      Therefore, no sensitive data is exposed outside of the application and online database.
+    </p>
+
+    <h3 class="my-4">Android Application</h3>
+
+    <img class="img-fluid d-block mx-auto company-logo" src="res/img/logos/android.svg" alt="Android logo">
+
+    <p>
+      The mobile application on Android is ideally designed to require authentication by doctors and nurses before accessing patient information, as well as authorization based on what level of care they are providing. Upon tapping an NFC bracelet, the app contacts the server with the patient ID and will receive the data to be displayed.
+    </p>
+    <p>
+      The data displayed can include personal information, history, emergency information, and medication.
+    </p>
+
+    <h3 class="my-4"></h3>
+
+    <img class="img-fluid d-block mx-auto company-logo" src="res/img/logos/" alt="">
+
+    <p>
+
+    </p>
+
+    <h3 class="my-4"></h3>
+
+    <img class="img-fluid d-block mx-auto company-logo" src="res/img/logos/" alt="">
+
+    <p>
+
+    </p>
 
     <h1 class="my-4">Results</h1>
 

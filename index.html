@@ -86,7 +86,9 @@
 
     <h3 class="my-4">Near-Field Communication (NFC)</h3>
 
-    <img class="img-fluid d-block mx-auto company-logo my-4" src="res/img/logos/nfc-tag.jpg" alt="NFC tag">
+    <a href="https://developer.android.com/guide/topics/connectivity/nfc" target="_blank">
+      <img class="img-fluid d-block mx-auto company-logo my-4" src="res/img/logos/nfc-tag.jpg" alt="NFC tag">
+    </a>
 
     <p>
       Each patient bracelet contains a light and cheap NFC tag. When the user taps the phone against the bracelet, the tag emits a small piece of data which identifies the patient uniquely, but does not include any confidential patient data itself.
@@ -97,7 +99,9 @@
 
     <h3 class="my-4">Android Application</h3>
 
-    <img class="img-fluid d-block mx-auto company-logo" src="res/img/logos/android.svg" alt="Android logo">
+    <a href="https://www.android.com/" target="_blank">
+      <img class="img-fluid d-block mx-auto py-4 company-logo" src="res/img/logos/android.svg" alt="Android logo">
+    </a>
 
     <p>
       The mobile application on Android is ideally designed to require authentication by doctors and nurses before accessing patient information, as well as authorization based on what level of care they are providing. Upon tapping an NFC bracelet, the app contacts the server with the patient ID and will receive the data to be displayed.
@@ -106,15 +110,27 @@
       The data displayed can include personal information, history, emergency information, and medication.
     </p>
 
-    <h3 class="my-4"></h3>
+    <h3 class="my-4">Golang</h3>
 
-    <img class="img-fluid d-block mx-auto company-logo" src="res/img/logos/" alt="">
+    <a href="https://golang.org/" target="_blank">
+      <img class="img-fluid d-block mx-auto company-logo" src="res/img/logos/golang.png" alt="Golang logo">
+    </a>
 
     <p>
-
+      The backend server, written in Golang, was designed to handle retrieval of patient data. Every request from the application contacts the server with a unique patient ID to request the information of that specific patient. Ideally, the server only provides the information pertinent to the level of care which the app is signed into. For example, surgeons will need more information than nurses.
     </p>
 
-    <h3 class="my-4"></h3>
+    <h3 class="my-4">CockroachDB</h3>
+
+    <a href="https://www.cockroachlabs.com/" target="_blank">
+      <img class="img-fluid d-block mx-auto company-logo" src="res/img/logos/cockroach-db.jpg" alt="CockroachDB logo">
+    </a>
+
+    <p>
+      The database, a CockroackDB instance, provides patient data for the server to access. The instance is easily scalable, and is replicated with a triple-node architecture.
+    </p>
+
+    <h3 class="my-4">Amazon Web Services</h3>
 
     <img class="img-fluid d-block mx-auto company-logo" src="res/img/logos/" alt="">
 

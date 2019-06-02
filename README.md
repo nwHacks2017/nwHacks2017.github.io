@@ -3,3 +3,5 @@
 ## By Luminescence
 
 HTML, CSS, and Bootstrap website to showcase the LifeBand project.
+
+View the website here: https://nwhacks2017.github.io/
